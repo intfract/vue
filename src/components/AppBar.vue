@@ -59,12 +59,15 @@
 
 <style scoped>
   nav {
-    width: 100%;
+    width: calc(100vw - 10px);
     display: flex;
     align-items: center;
     height: 60px;
     box-sizing: border-box;
     border-bottom: solid 2px #eee;
+    position: fixed;
+    background: white;
+    z-index: 100;
   }
 
   .appbar {
@@ -88,6 +91,13 @@
     display: flex;
     align-items: center;
     height: 100%;
+    color: var(--dark);
+    transition: 0.2s;
+  }
+
+  .logo:hover {
+    color: var(--dark);
+    opacity: 0.75;
   }
 
   .menu {
@@ -160,7 +170,7 @@
       position: fixed;
       left: 100vw;
       top: 60px;
-      width: 100vw;
+      width: calc(100vw - 10px);
       height: calc(100vh - 60px);
       flex-direction: column;
       justify-content: flex-start;
@@ -176,6 +186,7 @@
 
     .menu a {
       width: 100%;
+      padding: 0;
       justify-content: center;
       height: 60px;
     }

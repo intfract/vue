@@ -50,6 +50,23 @@
     color: var(--dark);
   }
 
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--dark);
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--darker);
+  }
+
   #app {
     width: 100vw;
     height: 100vh;
@@ -131,7 +148,7 @@
   }
 
   section {
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
   }
 
@@ -158,13 +175,13 @@
     padding: 20px;
     box-sizing: border-box;
     overflow: hidden;
-    box-shadow: 0 0 20px #00000080;
+/*     box-shadow: 0 0 20px #00000080; */
     transition: 0.2s;
   }
 
   .card:hover {
     transform: scale(0.95);
-    box-shadow: 0 0 5px #00000080;
+/*     box-shadow: 0 0 5px #00000080; */
     color: var(--dark);
   }
 
